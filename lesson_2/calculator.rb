@@ -11,7 +11,7 @@ operator = gets.chomp
 
 if operator == '1'
     result = number1.to_i + number2.to_i
-else if operator == '2'
+elseif operator == '2'
     result = number1.to_i - number2.to_i
 elseif operator == '3'
     result = number1.to_i * number2.to_i
