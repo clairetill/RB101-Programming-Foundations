@@ -18,6 +18,14 @@ def operation_to_message(op)
         'Dividing'
 end
 
+def integer?(input)
+  input.to_i.to_s == input
+end
+
+def float?(input)
+  input.to_f.to_s == input
+end
+
 prompt("Welcome to Calculator! Enter your name:")
 
 name = ''
@@ -95,6 +103,8 @@ loop do #main loop
     prompt("Do you want to perform another calculation? (Y to calculate again)")
     answer = gets.chomp
     break unless answer.downcase.start_with?('y')
-end
-    
+   
+end  
+
 prompt("Thank you for using the calculator. Good bye!")
+
