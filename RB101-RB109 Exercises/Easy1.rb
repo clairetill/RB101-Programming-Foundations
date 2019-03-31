@@ -18,7 +18,7 @@ def digit_list(number)
   number.to_s.chars.map(&:to_i)
 end
 
-4	How Many?
+4 How Many?
 
 def count_occurrences(array)
   occurrences = {}
@@ -32,13 +32,13 @@ def count_occurrences(array)
   end
 end
 
-5	Reverse It (Part 1)	
+5 Reverse It (Part 1) 
 
 def reverse_sentence(string)
   string.split.reverse.join(' ')
 end
 
-6	Reverse It (Part 2)	
+6 Reverse It (Part 2) 
 
 def reverse_words(string)
   words = []
@@ -51,7 +51,7 @@ def reverse_words(string)
   words.join(' ')
 end
 
-7	Stringy Strings
+7 Stringy Strings
 
 def stringy(size)
   numbers = []
@@ -64,19 +64,19 @@ def stringy(size)
   numbers.join
 end
 
-8	Array Average	
+8 Array Average 
 
 def average(numbers)
   sum = numbers.reduce { |sum, number| sum + number }
   sum / numbers.count
 end
-9	Sum of Digits
+9 Sum of Digits
 
 def sum(number)
   number.to_s.chars.map(&:to_i).reduce(:+)
 end
 
-10	What's my Bonus?
+10  What's my Bonus?
 def calculate_bonus(salary, bonus)
   bonus ? (salary / 2) : 0
 end
