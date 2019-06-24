@@ -22,3 +22,4 @@ JS229	Assessment Assessment: Object Oriented JavaScript
 JS230	DOM and Asynchronous Programming with JavaScript
 JS239	Assessment Assessment: DOM and Asynchronous Programming with JavaScript
 LS299	Core Curriculum Diagnostic Test
+  
