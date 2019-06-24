@@ -1,4 +1,4 @@
-Launch School core curriculum.
+Launch School core curriculum
 
 RB101	Programming Foundations
 
