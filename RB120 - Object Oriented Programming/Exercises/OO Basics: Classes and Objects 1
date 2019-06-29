@@ -41,10 +41,76 @@ kitty = Cat.new("Sophie")
 
 6.	Hello, Sophie! (Part 2)
 
+class Cat
+  def initialize(name)
+    @name = name
+  end
+
+  def greet
+    puts "Hello! My name is #{@name}!"
+  end
+end
+
+kitty = Cat.new('Sophie')
+kitty.greet
+
 7.	Reader	
+
+class Cat
+  def initialize(name)
+    @name = name
+  end
+
+  def name
+    @name
+  end
+
+  def greet
+    puts "Hello! My name is #{name}!"
+  end
+end
+
+
+kitty = Cat.new("Sophie")
+kitty.greet
 
 8.	Writer	
 
+  class Cat 
+  attr_reader(:name) 
+  attr_writer(:name)
+
+  def initialize(name)
+    @name = name
+  end
+
+  def greet
+    puts "Hello! My name is #{name}!"
+  end
+end
+
+kitty = Cat.new('Sophie')
+kitty.greet
+kitty.name = 'Luna'
+kitty.greet
+
 9.	Accessor	
+
+class Cat
+  attr_accessor(:name)
+
+  def initialize(name)
+    @name = name
+  end
+
+  def greet
+    puts "Hello! My name is #{name}!"
+  end
+end
+
+kitty = Cat.new('Sophie')
+kitty.greet
+kitty.name = 'Luna'
+kitty.greet
 
 10.	Walk the Cat
