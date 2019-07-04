@@ -1,0 +1,41 @@
+1.	Generic Greeting (Part 1)	
+
+class Cat
+  def self.generic_greeting
+    puts "Hello! I'm a cat!"
+  end
+end
+
+# Cat.generic_greeting
+kitty = Cat.new
+
+kitty.class.generic_greeting
+
+2. Hello, Chloe!	
+
+class Cat
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def rename(new_name)
+    self.name = new_name
+  end
+end
+
+kitty = Cat.new('Sophie')
+puts kitty.name
+kitty.rename('Chloe')
+puts kitty.name
+
+3. Identify Yourself (Part 1)	
+
+4	Generic Greeting (Part 2)	Not completed
+5	Counting Cats	Not completed
+6	Colorful Cat	Not completed
+7	Identify Yourself (Part 2)	Not completed
+8	Public Secret	Not completed
+9	Private Secret	Not completed
+10	Protected Secret	Not completed
