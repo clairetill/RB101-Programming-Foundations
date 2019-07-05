@@ -32,8 +32,64 @@ puts kitty.name
 
 3. Identify Yourself (Part 1)	
 
-4	Generic Greeting (Part 2)	Not completed
-5	Counting Cats	Not completed
+class Cat
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+  
+  def identify
+    self
+  end
+end
+
+kitty = Cat.new('Sophie')
+p kitty.identify
+
+4.	Generic Greeting (Part 2)	
+
+class Cat
+  attr_reader :name
+
+  def initialize(name)
+    @name = name
+  end
+  
+  def self.generic_greeting
+  puts "Hello! I'm a cat!"
+end
+
+  def personal_greeting
+     puts "Hello! My name is #{name}!"
+  end
+end
+
+kitty = Cat.new('Sophie')
+
+Cat.generic_greeting
+kitty.personal_greeting
+
+5.	Counting Cats
+
+  class Cat
+    @@number_of_cats = 0
+    
+    def initialize 
+      @@number_of_cats += 1
+  end
+  
+  def self.total
+    puts @@number_of_cats
+  end
+end
+
+kitty1 = Cat.new
+kitty2 = Cat.new
+
+Cat.total
+
+
 6	Colorful Cat	Not completed
 7	Identify Yourself (Part 2)	Not completed
 8	Public Secret	Not completed
