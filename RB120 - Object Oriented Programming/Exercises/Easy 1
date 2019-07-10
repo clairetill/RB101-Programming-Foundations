@@ -1,8 +1,92 @@
-1	Banner Class	Not completed
-2	What's the Output?	Not completed
-3	Fix the Program - Books (Part 1)	Not completed
-4	Fix the Program - Books (Part 2)	Not completed
-5	Fix the Program - Persons	Not completed
+1.	Banner Class
+
+class Banner
+  def initialize(message)
+    @message = message
+  end
+
+   def to_s
+    [horizontal_rule, empty_line, message_line, empty_line, horizontal_rule].join("\n")
+   end
+
+  private
+
+  def horizontal_rule
+    "+#{'-' * (@message.length + 2)}+"
+  end
+
+  def empty_line
+    "|#{' ' * (@message.length + 2)}|"
+  end
+
+  def message_line
+    "| #{@message} |"
+  end
+end
+
+2. What's the Output?	
+
+class Pet
+  attr_reader :name
+
+  def initialize(name)
+    @name = name.to_s
+  end
+
+  def to_s
+    @name.upcase!
+    "My name is #{@name}."
+  end
+end
+
+name = 'Fluffy'
+fluffy = Pet.new(name)
+puts fluffy.name       # >> Fluffy
+puts fluffy            # >> FLUFFY
+puts fluffy.name       # >> FLUFFY
+puts name              # >> FLUFFY
+
+3. Fix the Program - Books (Part 1)	
+
+class Book
+   attr_reader(:author, :title)  
+   
+   def initialize(author, title)
+    @author = author
+    @title = title
+  end
+
+  def to_s
+    %("#{title}", by #{author})
+  end
+end
+
+book = Book.new("Neil Stephenson", "Snow Crash")
+puts %(The author of "#{book.title}" is #{book.author}.)
+puts %(book = #{book}.)
+
+4. Fix the Program - Books (Part 2)
+
+class Book
+   attr_reader(:author, :title)  
+   
+   def initialize(author, title)
+    @author = author
+    @title = title
+  end  
+  
+  def to_s
+    %("#{title}", by #{author})
+  end
+end
+
+book = Book.new
+book.author = "Neil Stephenson"
+book.title = "Snow Crash"
+puts %(The author of "#{book.title}" is #{book.author}.)
+puts %(book = #{book}.)
+
+5. Fix the Program - Persons	Not completed
 6	Fix the Program - Flight Data	Not completed
 7	Buggy Code - Car Mileage	Not completed
 8	Rectangles and Squares	Not completed
