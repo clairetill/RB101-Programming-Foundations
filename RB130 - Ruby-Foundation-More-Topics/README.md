@@ -1,8 +1,11 @@
 Summary
+
 This course will cover some language specific aspects of the Ruby programming language. We'll specifically look at blocks and the Minitest testing library. This course will include assignments that will build upon knowledge gained from previous courses. After this course, you should have a deeper understanding of blocks and how to use Minitest.
 
 Detailed Syllabus
+
 Blocks
+
 Closures in Ruby
 Calling methods with blocks
 Writing methods that take blocks
@@ -13,7 +16,9 @@ Build an "reduce" method from scratch
 Build a todo list
 Blocks and variable scope
 symbol to proc
+
 Introduction to Testing
+
 Setting up Minitest
 Introduction to Minitest
 Assertions and refutations
