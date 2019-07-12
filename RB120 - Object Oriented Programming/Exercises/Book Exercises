@@ -55,7 +55,7 @@ Classes and Objects - Part I
 
   def shut_down
     @current_speed = 0
-    puts "Let's park this bad boy!"
+    puts "Let's park."
   end
 end
 
@@ -70,3 +70,19 @@ lumina.brake(20)
 lumina.current_speed
 lumina.shut_down
 lumina.current_speed
+
+2. class MyCar
+   attr_accessor :color
+   attr_reader :year
+end
+
+3. def spray_paint(color)
+     self.color = (color)
+     puts "Your new #{color} paint job looks great!"
+   end
+ end
+ 
+ Classes and Objects - Part II
+ 
+ 1. 
+  
