@@ -64,7 +64,8 @@ end
 class Undergraduate < Student
 end
 
-4	Circular Queue	Not completed
+4. Circular Queue	
+
 5	Stack Machine Interpretation	Not completed
 6	Number Guesser Part 1	Not completed
 7	Number Guesser Part 2	Not completed
