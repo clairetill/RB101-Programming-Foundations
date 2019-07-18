@@ -83,7 +83,7 @@ end
  end
  
  
- Classes and Objects - Part II
+Classes and Objects - Part II
  
  1. class MyCar
 
@@ -106,7 +106,11 @@ puts my_car  # => My car is a silver, 2010, Ford Focus.
 
 ## Note the "puts" calls "to_s" automatically.
 
-3. class Person
+3. We get this error because attr_reader only creates a getter method. 
+When we try to reassign the name instance variable to "Bob", we need a setter method called name=. 
+We can get this by changing attr_reader to attr_accessor or attr_writer if we don't intend to use the getter functionality.
+
+class Person
   attr_accessor :name
   # attr_writer :name ## => This also works but doesn't allow getter access
   def initialize(name)
@@ -116,3 +120,20 @@ end
 
 bob = Person.new("Steve")
 bob.name = "Bob"
+
+Inheritance
+
+class Vehicle 
+  def self.gas_mileage(gallons, miles)
+    puts "#{miles / gallons} miles per gallon of gas"
+  end
+end
+
+class MyCar < Vehicle
+  NUMBER_OF_DOORS = 4
+end
+
+class MyTruck < Vehicle
+  NUMBER_OF_DOORS = 2
+end
+  
