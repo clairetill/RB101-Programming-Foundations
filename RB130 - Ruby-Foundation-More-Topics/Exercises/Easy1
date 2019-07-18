@@ -1,1 +1,8 @@
 
+2. Optional Blocks
+
+def compute(input)
+  block_given? ? yield(input) : 'Does not compute.'
+end
+
+3. 
